@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jane Doe - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          karl Levig
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          jdoe@jeemail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +13456764598
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+
+          <div class="topdiv">
+            <a class="topmenu" href="#skills">Skills</a>
+
+            <div class="topdiv">
+                <a class="topmenu" href="#projects">Projects</a>
+
+                <div class="topdiv">
+                    <a class="topmenu" href="#Recommendations">Recommendations</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="black-9291149_960_720.png" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Karl Levig! <img src="html_finalprojimages/waving-hand.png" width="60px"/>
+          </h1>
+          <p>
+            I am a full stack developer with 2 years of experience in both application and presentation layers.
+            I have worked on applications and microservices deployed on IBM Cloud. 
+            I am an avid user of IBM Watson Services and have worked on Watson Assistant, NLU, Sentiment analyzer to name a few.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>2 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>3 years experience</p>
+        </div>  
+        <div class="skill">
+            <img src="sqlite-183454_1280.png"/>
+            <h6>SQLlite</h6>
+            <p>3 years experience</p>
+          </div>  
+
+          <div class="skill">
+            <img src="css3-1841590_1280.png"/>
+            <h6>CSS3</h6>
+            <p>3 years experience</p>
+          </div>  
+
+          <div class="skill">
+            <img src="ball-2157465_1280.png"/>
+            <h6>Flutter</h6>
+            <p>3 years experience</p>
+          </div>  
+
+        <!-- Add more skills here -->
+
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3> Smart Home Automation System</h3>
+            <ul>
+              <li>This project involves creating an automated smart home system that allows users to control lights, appliances, security systems, and heating/cooling from a mobile app or voice commands. </li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3> E-commerce Website with AI Product Recommendations</h3>
+            <ul>
+              <li>A dynamic e-commerce website that features AI-powered product recommendations based on user behavior and past purchases. Users can browse products, view reviews, add to their cart, and checkout securely.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3> Mobile App for Mental Health Support</h3>
+            <ul>
+              <li>This project aims to create a mobile application that provides mental health support by offering various tools, such as mood tracking, mindfulness exercises, and access to resources like therapy or peer support groups.</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Karl has knowledge in The web development field is rapidly evolving, with new technologies, frameworks, and tools emerging all the time. Staying updated ensures you remain competitive, innovative, and equipped to tackle new challenges.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          UX/UI is essential for creating user-friendly, accessible, and engaging websites. A good user experience leads to higher satisfaction and retention.
+
+
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+         I Follow coding standards and naming conventions.
+          Comment and document complex parts of your code.
+          Break code into reusable components and functions.
+          Use version control (e.g., Git) for collaboration and tracking changes.
+          Write tests to ensure your code works as expected. 
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg> <!--Add the code here for the logo to appear and the icon to be actionable-->
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3><!-- Add appropriate text here--></h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
